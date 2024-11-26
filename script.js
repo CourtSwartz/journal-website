@@ -12,11 +12,15 @@ const pages = [
 ];
 
 const images = [
-  "", // No image for single page
-  "images/Genly AI 01.jpeg", // Replace with actual paths
-  "image2.jpg",
-  "image3.jpg",
-  "image4.jpg"
+  "images/cover.jpg",         // Single page image
+  "images/entry1.jpg",        // Entry 1 image
+  "images/entry2.jpg",        // Entry 2 image
+  "images/entry3.jpg",        // Entry 3 image
+  "images/entry4.jpg",        // Entry 4 image
+  "images/entry5.jpg",        // Entry 5 image
+  "images/entry6.jpg",        // Entry 6 image
+  "images/entry7.jpg",        // Entry 7 image
+  "images/entry8.jpg"         // Entry 8 image
 ];
 
 let currentPage = 0;
@@ -41,8 +45,9 @@ function renderPage() {
     splitPage.style.display = "flex";
     pageTitle.textContent = current.title;
     entryText.textContent = current.text;
-    uploadedImage.src = images[currentPage] || ""; // Set the image or clear it
   }
+  // Set the image for the current page
+  uploadedImage.src = images[currentPage] || ""; // Clear if no image is set
 }
 
 function nextPage() {
@@ -56,18 +61,6 @@ function prevPage() {
   if (currentPage > 0) {
     currentPage--;
     renderPage();
-  }
-}
-
-function loadImage(event) {
-  const file = event.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function (e) {
-      images[currentPage] = e.target.result; // Save the uploaded image
-      uploadedImage.src = e.target.result; // Display the uploaded image
-    };
-    reader.readAsDataURL(file);
   }
 }
 
