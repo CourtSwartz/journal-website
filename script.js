@@ -1,8 +1,7 @@
 const pages = [
   "In the Shadow of Winter: Notes on Gender, Culture, and Self.",
 
-  'Entry 1: Arrival on Gethen (Karhide)
-  thoughts and thoughts`,
+  "Entry 1: Arrival on Gethen (Karhide) \nthoughts and thoughts",
 
   "Entry 2: Initial Encounters with a Curious Character, Estravan",
 
