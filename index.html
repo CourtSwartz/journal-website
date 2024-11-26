@@ -10,11 +10,22 @@
   <div class="journal">
     <button class="arrow left-arrow" onclick="prevPage()">&#8592;</button>
     <div class="page">
-      <div class="image-container">
-        <input type="file" id="imageUpload" accept="image/*" onchange="loadImage(event)">
-        <img id="uploadedImage" src="" alt="Upload your image">
+      <!-- Conditional rendering: Single or split-page layout -->
+      <div id="singlePage" class="single-page">
+        <div class="page-text" id="pageText"></div>
       </div>
-      <div class="page-text" id="pageText"></div>
+      <div id="splitPage" class="split-page">
+        <div class="left-page">
+          <div class="image-container">
+            <input type="file" id="imageUpload" accept="image/*" onchange="loadImage(event)">
+            <img id="uploadedImage" src="" alt="Upload your image">
+          </div>
+          <div class="title-text" id="pageTitle"></div>
+        </div>
+        <div class="right-page">
+          <div class="page-text" id="entryText"></div>
+        </div>
+      </div>
     </div>
     <button class="arrow right-arrow" onclick="nextPage()">&#8594;</button>
   </div>
