@@ -60,6 +60,29 @@ body {
   position: relative;
 }
 
+.title-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-page img {
+  max-width: 150px; /* Adjust the size of the title page image */
+  max-height: 150px;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
+
+.title-text {
+  font-size: 32px; /* Make the title text larger */
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333;
+  text-align: center;
+}
+
 .left-page,
 .right-page {
   width: 45%;
