@@ -1,11 +1,26 @@
 const pages = [
   "In the Shadow of Winter: Notes on Gender, Culture, and Self.",
 
-  "This is the second page. ",
+  'Entry 1: Arrival on Gethen (Karhide)
+  thoughts and thoughts`,
 
-  "This is the third page.",
+  "Entry 2: Initial Encounters with a Curious Character, Estravan",
 
-  "This is yet another page..."
+  "Entry 3: Reflections on Gethenian Gender",
+
+  "Entry 4: Betrayal and Imprisonment in Orgoreyn",
+
+  "Entry 5: Journey Across the Ice",
+
+  "Entry 6: Estravan’s Sacrifice",
+
+  "Entry 7: Reflection and Departure",
+
+  "Entry 8: Final Reflections on Gender and Gethenian Culture",
+
+  "",
+
+  ""
 ];
 
 const images = [
