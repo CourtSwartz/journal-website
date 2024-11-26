@@ -1,8 +1,11 @@
 const pages = [
   "In the Shadow of Winter: Notes on Gender, Culture, and Self.",
-  "This is the second page. You can add an image in the middle.",
-  "Keep writing your thoughts and upload more images.",
-  "You're on the last page. Keep journaling!"
+
+  "This is the second page. ",
+
+  "This is the third page.",
+
+  "This is yet another page..."
 ];
 
 const images = [
