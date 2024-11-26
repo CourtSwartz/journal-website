@@ -1,3 +1,14 @@
+/* General Styles */
+body {
+  font-family: 'Dancing Script', cursive; /* Handwriting font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
 .journal {
   display: flex;
   align-items: center;
@@ -12,10 +23,25 @@
   position: relative;
 }
 
+.arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
 .page {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .single-page {
@@ -28,16 +54,29 @@
   display: none;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
   padding: 20px;
+  position: relative;
 }
 
 .left-page,
 .right-page {
-  width: 48%;
+  width: 45%;
+  height: 100%;
+  position: relative;
+}
+
+.divider {
+  width: 2px;
+  background-color: #ccc;
+  height: 90%;
+  align-self: center;
 }
 
 .image-container {
   width: 100%;
+  height: 70%;
   border: 1px dashed #ccc;
   display: flex;
   align-items: center;
@@ -45,7 +84,6 @@
   position: relative;
   overflow: hidden;
   border-radius: 5px;
-  height: 200px;
 }
 
 .image-container img {
@@ -53,14 +91,33 @@
   max-height: 100%;
 }
 
-.page-text {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #333;
-}
-
 .title-text {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
+  text-align: center;
+}
+
+.page-text,
+.entryText {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+/* Centered text and responsive styling */
+.right-page .page-text {
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .page-text {
+    font-size: 16px;
+  }
+
+  .title-text {
+    font-size: 18px;
+  }
 }
