@@ -1,3 +1,4 @@
+/* General styles for responsiveness */
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -16,8 +17,9 @@ body {
   border: 2px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  width: 600px;
-  height: 400px;
+  width: 90%; /* Use percentage for responsive sizing */
+  max-width: 600px; /* Maintain a max size */
+  aspect-ratio: 3 / 2; /* Ensure the aspect ratio remains consistent */
   position: relative;
 }
 
@@ -36,17 +38,19 @@ body {
 .page {
   flex-grow: 1;
   text-align: center;
-  padding: 20px;
+  padding: 10px; /* Adjust for smaller screens */
 }
 
 .image-container {
   width: 100%;
-  height: 70%;
+  height: calc(70% - 10px); /* Adjust height relative to the container */
   border: 1px dashed #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden; /* Prevent overflow for large images */
+  border-radius: 5px;
 }
 
 .image-container input {
@@ -58,12 +62,20 @@ body {
 }
 
 .image-container img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%; /* Ensure the image scales with the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Prevent exceeding container height */
 }
 
 .page-text {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 16px; /* Slightly smaller text for better scaling */
   color: #333;
+}
+
+/* Media queries for smaller devices */
+@media (max-width: 600px) {
+  .page-text {
+    font-size: 14px;
+  }
 }
