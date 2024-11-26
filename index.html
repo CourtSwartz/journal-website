@@ -8,22 +8,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="singlePage" class="single-page">
-    <div class="title-page">
-      <img id="titlePageImage" src="images/title.jpg" alt="Title Page Image">
-      <div class="title-text" id="pageText"></div>
-    </div>
-  </div>
   <div class="journal">
     <button class="arrow left-arrow" onclick="prevPage()">&#8592;</button>
     <div class="page">
+      <!-- Title Page Layout -->
       <div id="singlePage" class="single-page">
-        <div class="page-text" id="pageText"></div>
+        <div class="title-page">
+          <img id="titlePageImage" src="" alt="Title Page Image">
+          <div class="title-text" id="pageText"></div>
+        </div>
       </div>
+
+      <!-- Split Page Layout -->
       <div id="splitPage" class="split-page">
         <div class="left-page">
           <div class="image-container">
-            <img id="uploadedImage" src="" alt="Upload your image">
+            <img id="uploadedImage" src="" alt="Journal Page Image">
           </div>
           <div class="title-text" id="pageTitle"></div>
         </div>

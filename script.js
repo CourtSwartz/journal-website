@@ -36,18 +36,22 @@ function renderPage() {
   const current = pages[currentPage];
   if (current.type === "single") {
     // Show single-page layout
-    singlePage.style.display = "block";
-    splitPage.style.display = "none";
+    singlePage.classList.add("active");
+    splitPage.classList.remove("active");
+
+    // Update title text and image
     pageText.textContent = current.content;
+    const titlePageImage = document.getElementById("titlePageImage");
+    titlePageImage.src = images[currentPage] || ""; // Set the title page image
   } else if (current.type === "split") {
     // Show split-page layout
-    singlePage.style.display = "none";
-    splitPage.style.display = "flex";
+    singlePage.classList.remove("active");
+    splitPage.classList.add("active");
+
     pageTitle.textContent = current.title;
     entryText.textContent = current.text;
+    uploadedImage.src = images[currentPage] || ""; // Set the left-page image
   }
-  // Set the image for the current page
-  uploadedImage.src = images[currentPage] || ""; // Clear if no image is set
 }
 
 function nextPage() {
@@ -66,3 +70,4 @@ function prevPage() {
 
 // Initialize the first page
 renderPage();
+
