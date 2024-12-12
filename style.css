@@ -62,10 +62,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  height: 100%; /* Ensures full container height for centering */
+  position: absolute; /* Allows precise positioning */
+  left: 10%; /* Adjust horizontal placement */
+  transform: translateY(-50%); /* Center vertically */
+  top: 50%;
 }
 
 .title-page img {
-  max-width: 150px; /* Adjust the size of the title page image */
+  max-width: 150px;
   max-height: 150px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -77,6 +82,7 @@ body {
   line-height: 1.2;
   color: #333;
   text-align: center;
+  white-space: pre-wrap; /* Ensures \n line breaks are respected */
 }
 
 .split-page {
