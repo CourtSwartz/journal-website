@@ -1,6 +1,6 @@
 
 const pages = [
-  { type: "single", content: "In the Shadow of Winter: Notes on Gender, Culture, and Self." },
+  { type: "single", content: "In the Shadow of Winter: \nNotes on Gender, Culture, and Self\n\nGenly Ai" },
   {
     type: "split",
     title: "Entry 1: Arrival on Gethen (Karhide)",
@@ -39,7 +39,7 @@ const pages = [
   {
     type: "split",
     title: "Entry 8: Final Reflections",
-    text: "Gender. Culture. Humanity.\n\nI arrived on Gethen believing I had answers, but I leave knowing I barely understood the questions. Gender, as I once knew it, feels irrelevant here. The Gethenians have shown me that identity is not fixed; it is fluid, adaptive, and deeply personal.\n\nEstravan’s face comes to mind as I write this, their eyes, their voice. I am reminded that what matters most is not what someone is, but who they are.\n\nIn the shadow of Winter, I have found truths I never thought to seek. Perhaps, in time, these truths will find a way to reshape my world as much as they have reshaped me."
+    text: "Gender. Culture. Humanity.\n\nI arrived on Gethen believing I had answers, but I leave knowing I barely understood the questions. Gender, as I once knew it, feels irrelevant here. The Gethenians have shown me that identity is not fixed; it is fluid, situational, and deeply personal.\n\nEstravan’s face comes to mind as I write this, their eyes, their voice. I am reminded that what matters most is not what someone is, but who they are.\n\nIn the shadow of Winter, I have found truths I never thought to seek. Perhaps, in time, these truths will find a way to reshape my world as much as they have reshaped me."
   }
 ];
 
