@@ -2,7 +2,7 @@
 const pages = [
   {
     type: "single",
-    content: "In the Shadow of Winter:\nNotes on Gender, Culture, and Self\n\nGenly Ai"
+    content: "In the Shadow of Winter:Notes on Gender, Culture, and Self by Genly Ai"
   },
   {
     type: "split",
