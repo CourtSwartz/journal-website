@@ -1,6 +1,9 @@
 
 const pages = [
-  { type: "single", content: "In the Shadow of Winter: \nNotes on Gender, Culture, and Self\n\nGenly Ai" },
+  {
+    type: "single",
+    content: "In the Shadow of Winter:\nNotes on Gender, Culture, and Self\n\nGenly Ai"
+  },
   {
     type: "split",
     title: "Entry 1: Arrival on Gethen (Karhide)",
